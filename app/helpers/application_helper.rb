@@ -1,6 +1,6 @@
 module ApplicationHelper
     def full_title(page_title = '')
-        base_title = "GameRecc"
+        base_title = "Game-Recc"
         if page_title.empty?
             base_title
         else
