@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   root 'home#index'
-  get 'home#about'
-  get 'home#help'
+  get 'about' => 'home#about'
+  get 'help' => 'home#help'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
