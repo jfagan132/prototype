@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'about' => 'home#about'
   get 'help' => 'home#help'
   get 'signup' => 'users#new'
+  get 'users' => 'users#index'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
