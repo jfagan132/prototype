@@ -1,4 +1,7 @@
 <% provide(:title, 'All users') %>
+<% if flash[:success] %>
+    <div class="success_flash"><%= flash[:success] %></div>
+<% end %>
 <h1>All users</h1>
 
 <%= will_paginate %>

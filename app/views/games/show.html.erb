@@ -1,0 +1,14 @@
+<% provide(:title, @game.title) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="game_info">
+      <h1>
+        <%= @game.title %>
+      </h1>
+      <h2>
+        Genre: <%= @game.genre %><br>
+        ESRB Rating: <%= @game.rating %>
+      </h2>
+    </section>
+  </aside>
+</div>

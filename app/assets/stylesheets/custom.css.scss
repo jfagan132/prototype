@@ -206,6 +206,39 @@ input {
   }
 }
 
+/* Game page */
+
+.game_info h1 {
+  font-size: 24pt;
+}
+
+.game_info h2 {
+  text-align: left;
+  font-size: 16pt;
+}
+
+/* Flashes */
+
+.danger_flash {
+  border-radius: 5px;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  background-color: #FFB6C1;
+  color: red;
+}
+
+.success_flash {
+  border-radius: 5px;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  background-color: #90EE90;
+  color: green;
+}
+
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
