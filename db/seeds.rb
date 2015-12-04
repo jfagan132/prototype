@@ -20,3 +20,13 @@ User.create!(name:  "Admin",
                password:              password,
                password_confirmation: password)
 end
+
+Game.create!(title: "Undertale", genre:"RPG", rating:"Not Rated")
+Game.create!(title: "Fallout 4", genre:"Shooter", rating:"M")
+
+99.times do |n|
+    Game.create!(title: "game-#{n+1}", genre:"genre-#{n+1}", rating:"E")
+end
+
+Reccomendation.create!(opinion:"It's very good", user: User.find(1), game: Game.find(1))
+Reccomendation.create!(opinion:"It's great", user: User.find(3), game: Game.find(2))
