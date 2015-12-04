@@ -3,7 +3,7 @@ class GamesController < ApplicationController
     before_action :admin_user,     only: :destroy
     
     def index
-        @games = Game.all
+        @games = Game.paginate(page: params[:page])
     end
     
     def show
