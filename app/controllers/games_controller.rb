@@ -8,6 +8,7 @@ class GamesController < ApplicationController
     
     def show
         @game = Game.find(params[:id])
+        @reccomendations = @game.reccomendations.paginate(page: params[:page])
     end
     
     def destroy

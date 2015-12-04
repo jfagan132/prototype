@@ -11,4 +11,13 @@
       </h2>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @game.reccomendations.any? %>
+      <h3>Reccomendations (<%= @game.reccomendations.count %>)</h3>
+      <ol class="reccomendations">
+        <%= render @reccomendations %>
+      </ol>
+      <%= will_paginate @reccomendations %>
+    <% end %>
+  </div>
 </div>

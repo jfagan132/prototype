@@ -1,0 +1,10 @@
+<li id="reccomendation-<%= reccomendation.id %>">
+  <%= link_to gravatar_for(reccomendation.user, size: 50), reccomendation.user %>
+  <span class="user_game"><%= link_to reccomendation.user.name, reccomendation.user %> reccomends
+  <%= link_to reccomendation.game.title, reccomendation.game %></span>
+  <br>
+  <span class="opinion"><%= reccomendation.opinion %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(reccomendation.created_at) %> ago.
+  </span>
+</li>
