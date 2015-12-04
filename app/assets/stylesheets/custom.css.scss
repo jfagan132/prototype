@@ -229,12 +229,12 @@ input {
   .user_game {
     margin-top: 5em;
     padding-top: 0;
-    font-size: 12pt;
+    font-size: 14pt;
   }
   .opinion {
     display: block;
     margin-left: 60px;
-    font-size: 10pt;
+    font-size: 12pt;
     img {
       display: block;
       padding: 5px 0;
@@ -244,6 +244,7 @@ input {
     color: $gray-light;
     display: block;
     margin-left: 60px;
+    font-size: 10pt;
   }
   .gravatar {
     float: left;

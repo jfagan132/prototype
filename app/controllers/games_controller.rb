@@ -17,6 +17,10 @@ class GamesController < ApplicationController
         redirect_to games_url
     end
     
+    def reccomendation
+      @reccomendation = Reccomendation.new(user: current_user, game: Game.find(params[:id]))
+    end
+    
     private
 
     def user_params

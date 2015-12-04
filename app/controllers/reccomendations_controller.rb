@@ -10,6 +10,10 @@ class ReccomendationsController < ApplicationController
       render 'home#index'
     end
   end
+  
+  def index
+    @reccomendations = Reccomendation.paginate(page: params[:page])
+  end
 
   def destroy
   end

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get 'users' => 'users#index'
   get 'games' => 'games#index'
+  get 'reccomendations' => 'reccomendations#index'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
