@@ -1,6 +1,6 @@
 <li id="reccomendation-<%= reccomendation.id %>">
   <%= link_to gravatar_for(reccomendation.user, size: 50), reccomendation.user %>
-  <span class="user_game"><%= link_to reccomendation.user.name, reccomendation.user %> reccomends
+  <span class="user_game"><%= link_to reccomendation.user.name, reccomendation.user %> recommends
   <%= link_to reccomendation.game.title, reccomendation.game %></span>
   <br>
   <span class="opinion"><%= reccomendation.opinion %></span>

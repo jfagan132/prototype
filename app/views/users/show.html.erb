@@ -10,7 +10,7 @@
   </aside>
   <div class="col-md-8">
     <% if @user.reccomendations.any? %>
-      <h3>Reccomendations (<%= @user.reccomendations.count %>)</h3>
+      <h3>Recommendations (<%= @user.reccomendations.count %>)</h3>
       <ol class="reccomendations">
         <%= render @reccomendations %>
       </ol>
