@@ -1,6 +1,10 @@
 <% provide(:title, 'All reccomendations') %>
 <h1>All reccomendations</h1>
 
+<% will_paginate %>
+
 <ul class="reccomendations">
   <%= render @reccomendations %>
 </ul>
+
+<% will_paginate %>
