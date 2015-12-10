@@ -4,7 +4,7 @@ class ReccomendationsController < ApplicationController
   def create
     @reccomendation = current_user.reccomendation.build(reccomendation_params)
     if @reccomendation.save
-      flash[:success] = "Reccomendation created!"
+      flash[:success] = "Recommendation created!"
       redirect_to root_url
     else
       render 'home#index'
